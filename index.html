@@ -4,32 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/componenets/header.css">
+    <link rel="stylesheet" href="styles/componenets/hero.css">
+    <link rel="stylesheet" href="styles/componenets/reviews.css">
+    <link rel="stylesheet" href="styles/componenets/services.css">
+    <link rel="stylesheet" href="styles/componenets/stats.css">
+    <link rel="stylesheet" href="styles/componenets/gallery.css">
+    <link rel="stylesheet" href="styles/utils.css">
 </head>
 <body>
-    <header>
-        <div class="headerbox">
-            <div class="heading">
+    <div class="colorclear">
+        <header class="header container">
+            <img class="Logo" src="RiverviewShineLogoComplete.png" alt="Company Logo in top left corner">
+            <nav>
                 <ul>
-                    <li><div class="logo"><img src="RiverviewShineLogoComplete.png" alt="Company logo"></div></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Ceramic Coating</a></li>
-                    <li><a href="">Customer Benefits</a></li>
-                    <li><a href="">Book Now</a></li>
+                    <li>
+                        <a class="header__link" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#ceramiccoating">Ceramic Coating</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#customerbenefits">Customer Benefits</a>
+                    </li>
+                    <li>
+                        <button class="button" class="header__button" href="#booknow">Book Now</button>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </header>
+                <button class="header__bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                  
+                </button>
+            </nav>
+        </header>
+    </div>
     <main>
-        <div class="herosection">
-            <div class="topheading">Get your <span class="underlined">dream</span> car detailing result</div>
-            <div class="bottomheading">Guaranteed.</div>
-            <div class="offer">Get our <span class="underlined">free</span> client benefits while we <span class="underlined">transform your vehicle instantly</span> transform your vehicle instantly with our high value detailing services; <span class="underlined">We guarantee you'll love the results, or you can have your money back.</span> </div>
-            <div class="buttons">
-                <button class="mainbutton">See Services</button>
-                <button class="secondarybutton">Call Now</button>
+        <section class="hero container">
+            <div>
+                <h1>Get your <span class="underlined">dream</span> car detailing result</h1>
+                <h1 class="cocolor">Guaranteed.</h1>
             </div>
+            <p>
+                Get our <span class="underlined">free</span> client benefits while we <span class="underlined">transform your vehicle instantly</span> with our high value detailing services; <span class="underlined">We guarantee you'll love the results, or you can have your money back.</span>
+            </p>
+            <div class="buttons">
+                <button class="button">See Services</button>
+                <button class="button btnblack">Call Now</button>
+            </div>
+        </section>
+        <div class="backgroundgrey">
+            <section class="review container">
+                <div class="guaranteetext">
+                    <h1>We <span class="cocolor">guarantee</span> you will love our service.</h1>
+                <p><em>Just like our other customers.</em></p>
+                <p><span class="cocolor">Our industry leading guarantee ensures you have no risk involved</span> in any of our services, If you are not willing to sucker punch a baby seal to keep our service, you can call us and tell us “your service sucks”, and we will begin a refund or re-detail process.  </p>
+                </div>
+                <div class="reviews">
+                    <div class="reviewbox">
+                        <img class="profilepicture" src="tempprofile.png" alt="Picture of person who left review">
+                        <img class="stars" src="5star.png" alt="Five stars to indicate 5 star review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate porro iste fugit eveniet voluptatem maxime nisi! Repellat voluptas sit repudiandae exercitationem quo porro nihil aspernatur, laudantium provident perferendis obcaecati illo.
+                        </p>
+                        <h1>Placeholder Name</h1>
+                        <h2>Verified Customer</h2>
+                    </div>
+                    <div class="reviewbox">
+                        <img class="profilepicture" src="tempprofile.png" alt="Picture of person who left review">
+                        <img class="stars" src="5star.png" alt="Five stars to indicate 5 star review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate porro iste fugit eveniet voluptatem maxime nisi! Repellat voluptas sit repudiandae exercitationem quo porro nihil aspernatur, laudantium provident perferendis obcaecati illo.
+                        </p>
+                        <h1>Placeholder Name</h1>
+                        <h2>Verified Customer</h2>
+                    </div>
+                    <div class="reviewbox">
+                        <img class="profilepicture" src="tempprofile.png" alt="Picture of person who left review">
+                        <img class="stars" src="5star.png" alt="Five stars to indicate 5 star review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate porro iste fugit eveniet voluptatem maxime nisi! Repellat voluptas sit repudiandae exercitationem quo porro nihil aspernatur, laudantium provident perferendis obcaecati illo.
+                        </p>
+                        <h1>Placeholder Name</h1>
+                        <h2>Verified Customer</h2>
+                    </div>
+                </div>
+            </section>
         </div>
+        <div class="backgrounddark">
+            <section class="services container">
+                <div class="servicestext">
+                    <h1>Our Specialized Services.</h1>
+                    <h2>We offer a wide range of services and free benefits to our customers in order to ensure that we can address any vehicles specific needs.</h2>
+                </div>
+                <div class="servicesflexcontain">
+                    <div class="servicesflexitem">
+                        <div>
+                            <h3>FREE BENEFITS</h3>
+                            <p>All of our clients receive exclusive access to a large set of free benefits. Some of these benefits are customized service plans, self-maintenance plans, 24/7 Question helpline, free rescheduling, Product refill service, and much more</p>
+                        </div>
+                        <a href="#placeholder">CLICK TO LEARN MORE</a>
+                    </div>
+                    <div class="servicesflexitem">
+                        <div>
+                            <h3>DETAILING PACKAGES</h3>
+                            <p>Our pre-made detailing packages are designed to fit the needs of most vehicles while saving our customers money at the same time. We will help you identify what package is best for your vehicles needs, after that, looking at your vehicle will be a joy, and your vehicle will feel and smell almost brand new.</p>
+                        </div>
+                        <a href="#placeholder">CLICK TO LEARN MORE</a>
+                    </div>
+                    <div class="servicesflexitem">
+                        <div>
+                            <h3>PERSONALIZED PLANS</h3>
+                            <p>If one of our many detailing packages does not fit your vehicles needs, we will assist you in creating your own custom package, with exactly what your car needs.</p>
+                        </div>
+                        <a href="#placeholder">CALL TO CREATE</a>
+                    </div>
+                    <div class="servicesflexitem">
+                        <div>
+                            <h3>CERAMIC COATINGS</h3>
+                            <p>Our ceramic coatings offer protection, shine, and smoothness to your vehicles paint. Our ceramic coating service creates a barrier on your paint that helps restore paint to its natural beauty while offering a hydrophobic coating to keep your car extra clean. This service will surely turn you into the person to back into parking spots just to admire your car.</p>
+                        </div>
+                        
+                        <a href="#placeholder">CLICK TO LEARN MORE</a>
+                    </div>
+                    <div class="servicesflexitem">
+                        <div>
+                            <h3>PAINT CORRECTION</h3>
+                            <p>We have many different levels of paint correction to enhance your paint, some levels simply bring shine to paint already in good condition, others restore paint, removing scratches, swirls, roughness, and imperfections.</p>
+                        </div>
+                        <a href="#placeholder">CLICK TO LEARN MORE</a>
+                    </div>
+                    <div class="buttondiv">
+                        <button class="button" href="#placeholder">Book Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="companycolor">
+            <section class="stats container">
+                <ul>
+                    <li><h1><em>100 Percent</em> customer satisfaction</h1></li>
+                    <li><h1><span class="bold">Five Star</span> review average</h1></li>
+                </ul>
+                <p>According to Facebook and Google Reviews</p>
+            </section>
+        </div>
+        <div class="clear">
+            <section class="gallery">
+                <h1>Gallery</h1>
+            </section>
+        </div>
+        <!-- <section></section>
+        <section></section> -->
     </main>
-</body>
+    <footer></footer>
 </html>

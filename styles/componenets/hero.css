@@ -1,0 +1,65 @@
+.hero {
+    margin-top: 8rem;
+    margin-bottom: 25rem;
+}
+
+.hero h1 {
+    font-weight: 550;
+    font-size: var(--size-2xl);
+}
+
+.hero p {
+    font-size: var(--size-base);
+    max-width: 45rem;
+}
+
+.cocolor {
+    color: var(--clr-companyclr);
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+        .hero h1 {
+            font-size: var(--size-4xl);
+        }
+    }
+
+/* md */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: var(--size-5xl);
+    }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero h1 {
+        font-size: var(--size-6xl);
+    }
+
+    .hero p {
+        font-size: var(--size-lg);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .hero h1 {
+        font-size: var(--size-7xl);
+    }
+}
